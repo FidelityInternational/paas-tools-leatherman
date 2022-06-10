@@ -1,4 +1,4 @@
-FROM maven:3-jdk-11
+FROM maven:3.8-jdk-11
 
 ENV NODE_VERSION=18.0.0
 ENV NVM_DIR=/root/.nvm
