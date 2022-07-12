@@ -5,6 +5,7 @@ ENV NVM_DIR=/root/.nvm
 ENV CF_CLI_VERSION="7.4.0"
 
 RUN apt update
+RUN apt upgrade -y
 RUN apt install -y git curl python-is-python3 pip
 RUN curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh" | bash
 RUN curl -fL "https://packages.cloudfoundry.org/stable?release=linux64-binary&version=${CF_CLI_VERSION}" | tar -zx -C /usr/local/bin
