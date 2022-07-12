@@ -2,7 +2,7 @@ FROM maven:3.8-jdk-11
 
 ENV NODE_VERSION=18.0.0
 ENV NVM_DIR=/root/.nvm
-ENV CF_CLI_VERSION="7.2.0"
+ENV CF_CLI_VERSION="7.4.0"
 
 RUN apt update
 RUN apt install -y git curl python-is-python3 pip
